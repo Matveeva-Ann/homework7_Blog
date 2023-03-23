@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="card" *ngFor="let article of blogsArticle" [routerLink]="[ '/blog', article.id ]">
+    <img src="./Economy.jpg" alt="Economy" class="img">
+    <span class="author">{{article.author}}</span>
+    <h3 class="title">{{article.title}}</h3>
+    <p class="text">{{article.text | slice:0:250}} <span *ngIf="article.text.length>250">...</span></p>
+  </div>
+</div>

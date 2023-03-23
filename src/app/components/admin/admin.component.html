@@ -1,0 +1,14 @@
+<div class="container">
+  <button type="button" class="btn" [routerLink]="[ '/blog' ]"> Blog</button>
+  <div class="content">
+    <app-form 
+        (newArticle)="newArticle($event)" 
+        (exchangeArticle)="exchangeArticle($event)"
+        [emitArticleForChange]="emitArticleForChange"></app-form>
+    <app-table 
+       [articlesArr]="articlesArr" 
+       (idElementDeleted)="idElementDeleted($event)" 
+       (changesArticle)="changesArticle($event)">
+  </app-table>
+  </div>
+</div>

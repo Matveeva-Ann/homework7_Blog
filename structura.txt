@@ -1,0 +1,12 @@
+components/
+   header.component
+   admin.component
+      form.component
+      table.component
+   blog.component
+shared/
+   styles/
+    mixins.scss
+    variables.scss
+   services/
+     service

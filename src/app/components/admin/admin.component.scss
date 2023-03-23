@@ -1,0 +1,20 @@
+@import '/src/app/shared/styles/mixins';
+@import '/src/app/shared/styles/variables';
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.btn{
+  @extend %btnStyle;
+  @include size (200px, 40px);
+  text-align: start;
+}
+.content{
+  flex-grow: 1;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

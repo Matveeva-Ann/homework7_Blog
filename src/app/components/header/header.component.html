@@ -1,0 +1,4 @@
+<div class="container">
+  <a class="page" [routerLink]="[ '/blog' ]" [ngClass]="{'active': activePage === 'blog'}" (click)="pageClick('blog')">Blog</a>
+  <a class="page" [routerLink]="[ '/admin' ]" [ngClass]="{'active': activePage === 'admin'}"  (click)="pageClick('admin')">Admin</a>
+</div>

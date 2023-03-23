@@ -1,0 +1,13 @@
+<form name="blogForm" class="blogForm">
+  <input type="text" name="articleTitle" class="articleTitle" placeholder="title here.." [(ngModel)]="title">
+  <textarea name="articleText" class="articleText" id="" cols="30" rows="7" placeholder="text here..."
+    [(ngModel)]="text"></textarea>
+  <input type="text" name="articleAuthor" class="articleAuthor" placeholder="author here..." [(ngModel)]="author">
+  <p *ngIf="message" class="message">*all fields must be filled</p>
+  <ng-container *ngIf="changeBtn; else saveEdit">
+    <button type="submit" class="btnAddArticle" (click)="addArticle()">Add</button>
+  </ng-container>
+  <ng-template #saveEdit>
+    <button type="submit" class="btnChangeArticle" (click)="editArticle()">Save Edit</button>
+  </ng-template>
+</form>

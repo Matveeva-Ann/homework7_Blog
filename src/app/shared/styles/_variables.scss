@@ -1,0 +1,53 @@
+
+$black: #000;
+$darkgray: 	#3d3d3d;
+$white: #fff;
+$lightGray: #acacac;
+$teal: 	#008080;
+
+
+%btnStyle{
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 2px $black;
+  border-radius: 2px;
+  color: $white;
+  background-color: $darkgray;
+  padding: 4px 15px;
+  font-size: 1em;
+  transition: opacity 0.5s;
+  min-height: 30px;
+  &:hover{
+    opacity: 0.8;
+  }
+  &:active{
+    transform: translate3d(0, 0.1em, 0);
+  }
+}
+%formFieldsStyle{
+  border: 1px solid $lightGray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 2px;
+  width: 100%;
+  min-height: 40px;
+  padding: 4px 10px;
+  font-size: 1em;
+  &:focus{
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow: 0 0 4px $teal;
+  }
+}
+
+%flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+%flexLeft{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}

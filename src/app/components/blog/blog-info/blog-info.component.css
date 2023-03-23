@@ -1,0 +1,31 @@
+.container {
+  box-shadow: 1px 2px 6px gray;
+  width: 70%;
+  height: auto;
+  margin: 20px auto;
+}
+
+.cardImg {
+  width: 100%;
+  max-height: 500px;
+}
+
+.author {
+  font-size: 1em;
+  text-align: end;
+  color: #4169e1;
+  padding: 10px;
+}
+
+.title {
+  font-size: 2em;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.text {
+  font-size: 1.3em;
+  padding: 10px;
+}/*# sourceMappingURL=blog-info.component.css.map */

@@ -1,0 +1,25 @@
+@import '/src/app/shared/styles/variables';
+@import '/src/app/shared/styles/mixins';
+
+.blogForm{
+  flex-grow: 1;
+  @extend %flexCenter;
+  width: 100%;
+  gap: 15px;
+}
+.articleTitle, .articleText, .articleAuthor{
+  @extend %formFieldsStyle;
+}
+
+.btnAddArticle, .btnChangeArticle{
+  @extend %btnStyle;
+  align-self: flex-start; 
+}
+.articleText{
+  resize: none;
+}
+.message{
+  color: red;
+  font-size: 1.2em;
+  width: 100%;
+}

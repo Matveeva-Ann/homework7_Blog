@@ -1,0 +1,26 @@
+@import '/src/app/shared/styles/variables';
+@import '/src/app/shared/styles/mixins';
+
+.container{
+  @include size(100%, 15vh);
+  @extend %flexLeft;
+  background-color: $darkgray;
+  padding-left: 30px;
+}
+.page{
+  display: inline-block;
+  @include size(70px, 30px);
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 27px;
+  &:hover{
+    color: $lightGray;
+  }
+  &:active{
+    transform: translate3d(0, 0.1em, 0);
+  }
+}
+.active{
+  color: $lightGray;
+}
